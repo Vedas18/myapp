@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.creepy-text {
+  font-family: 'Creepster', cursive;
+  font-size: 32px;
+  color: #ff0000; /* blood red */
+  text-shadow: 2px 2px 6px black;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.start-text {
+  font-family: 'Creepster', cursive;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0 0 10px red, 0 0 20px black;
+  animation: flicker 2s infinite;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px red, 0 0 20px black;
+  }
+  20%, 24%, 55% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
+}
